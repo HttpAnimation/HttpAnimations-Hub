@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HttpAnimations</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            background-color: #111;
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-left: 10px;
+        }
+
+        main {
+            display: flex; /* Added to make the button containers align horizontally */
+            justify-content: flex-start; /* Added to align button containers from left to right */
+            padding: 20px;
+        }
+
+        .button-container {
+            margin-right: 10px; /* Added to create a small gap between button containers */
+        }
+
+        .button-container:last-child {
+            margin-right: 0; /* Remove the right margin for the last button container */
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            background-color: #444;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        button:hover img {
+            transform: scale(1.2); /* Added to scale up the image on hover */
+        }
+
+        button:hover {
+            background-color: #666;
+        }
+
+        /* Additional rule for responsive button layout */
+        @media screen and (max-width: 500px) {
+            main {
+                flex-wrap: wrap; /* Allow button containers to wrap to a new line on smaller screens */
+                justify-content: center; /* Center the button containers on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="IconButSmall.png" width="100" height="100" alt="HttpAnimations Icon">
+        <h1>HttpAnimations</h1>
+    </header>
+
+    <main>
+        <div class="button-container"><a href="https://discord.com/users/918163275936563250" target="_blank"><button><img src="discord-logo-png-7617.png" alt="Discord"></button></a></div>
+        <div class="button-container"><a href="https://www.youtube.com/channel/UCGsVJH8qR83TSUjB7p1Wg0A" target="_blank"><button><img src="youtube-logo-png-2062.png" alt="Youtube"></button></a></div>
+    </main>
+</body>
+</html>
